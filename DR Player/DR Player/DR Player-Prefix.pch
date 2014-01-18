@@ -1,0 +1,31 @@
+//
+// Prefix header for all source files of the 'DR Player' target in the 'DR Player' project
+//
+
+#ifdef __OBJC__
+    #ifdef DEBUG
+    #define DebugNSLog(format, ...) NSLog(format, ## __VA_ARGS__)
+    #else
+    #define DebugNSLog(format, ...)
+    #endif
+    
+    #import <Cocoa/Cocoa.h>
+    #import <Quartz/Quartz.h>
+    #import <QuartzCore/QuartzCore.h>
+    #import <AVFoundation/AVFoundation.h>
+    #import <SpriteKit/SpriteKit.h>
+    #import <SystemConfiguration/SystemConfiguration.h>
+    #import <Sparkle/SUUpdater.h>
+
+    #import "NSArrayController+DRPAdditions.h"
+    #import "NSAttributedString+DRPAdditions.h"
+    #import "NSColor+DRPAdditions.h"
+    #import "NSDate+DRPAdditions.h"
+    #import "NSImage+DRPAdditions.h"
+    #import "NSString+DRPAdditions.h"
+
+
+    #import "DRPConstants.h"
+    #import "DRPChannel.h"
+
+#endif
